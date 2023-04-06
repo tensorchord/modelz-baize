@@ -59,7 +59,7 @@ RUN pip install -r requirements.txt
 
 RUN mkdir -p /workspace
 
-COPY app.py workspace/
+COPY . workspace/
 
 WORKDIR /workspace
 
