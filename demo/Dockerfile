@@ -63,4 +63,4 @@ COPY . workspace/
 
 WORKDIR /workspace
 
-ENTRYPOINT [ "python", "app.py" ]
+ENTRYPOINT [ "python", "app.py", "decapoda-research/llama-7b-hf", "project-baize/baize-lora-7B"]
