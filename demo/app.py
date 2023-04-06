@@ -13,8 +13,13 @@ logging.basicConfig(
     format="%(asctime)s [%(levelname)s] [%(filename)s:%(lineno)d] %(message)s",
 )
 
-base_model = sys.argv[1]
-adapter_model = sys.argv[2]
+base_model = "decapoda-research/llama-7b-hf"
+adapter_model = "project-baize/baize-lora-7B"
+
+if len(sys.argv) > 1:
+    base_model = sys.argv[1]
+    adapter_model = sys.argv[2]
+
 tokenizer, model, device = load_tokenizer_and_model(base_model, adapter_model)
 
 
