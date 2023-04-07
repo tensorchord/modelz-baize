@@ -242,6 +242,8 @@ with gr.Blocks(css=customCSS, theme=small_and_beautiful_theme) as demo:
         show_progress=True,
     )
 
+    gr.Markdown("Check out [**Baize**](https://github.com/project-baize/baize-chatbot) | Hosted on [**Modelz**](https://docs.modelz.ai/)")
+
 demo.title = "Baize"
 
 if __name__ == "__main__":
